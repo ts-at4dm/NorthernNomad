@@ -1,0 +1,204 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 400 to 700*/
+
+.dancing-script-<uniquifier> {
+	font-family: "Dancing Script", cursive;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+}
+
+#index {
+min-height: 100vh;
+background-image: url(brinkley.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+font-family: sans-serif;
+}
+
+li {
+	color: whitesmoke;
+}
+
+/* -------------------------------------------------Navbar Styles ----------------------------------------------------*/
+nav{
+	background-color: #E1D9D1 ;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+	font-family: dancing script;
+	font-size: 1.6em;
+}
+
+h1 {
+	font-family: dancing script;
+}
+
+nav ul{
+	width: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	color: whitesmoke;
+}
+nav li {
+	height: 50px;
+	color: whitesmoke;
+	
+}
+nav a {
+	height: 100%;
+	padding: 0 30px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	color: black;
+}
+nav a:hover{
+	background-color: #ffe8ae;
+}
+nav li:first-child{
+	margin-right: auto;
+}
+.sidebar{
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 250px;
+	z-index: 999;
+	background-color: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(10px);
+	box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1) ;
+	display: none;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.sidebar li {
+	width: 100%;
+}
+.sidebar	 a{
+	width: 100%;
+}
+.menu-button {
+	display: none;
+}
+@media(max-width: 800px){
+	.hideOnMobile{
+		display: none;
+	}
+	.menu-button{
+		display: block;
+	}
+}
+@media(max-width: 500px){
+	.sidebar{
+		width: 100%
+	}
+}
+
+/* -------------------------------------- Styling for testimonials ----------------------------------------*/
+
+.all_reviews {
+	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
+	align-items: center;
+	justify-content: center;
+  }
+
+.review {
+	border: 1px solid gray;
+	display: block;
+	border-radius: 8px;
+	text-align: center;
+	margin: 6rem 9px 6px 6rem;
+	padding: 3rem;
+	width: 2in;
+	font-size: 20px;
+	box-shadow: 0 4px 12px gray;
+}
+
+.review_intro {
+	text-align: center;
+}
+
+/*----------------Login Page--------------*/
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 0px auto;
+  display: flex;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
